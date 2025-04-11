@@ -13,7 +13,7 @@ services:
       timeout: 3s
       interval: 15s
     ports:
-      - "8000:8080"
+      - "4000:8080"
     volumes:
       - /etc/netbox/config:/etc/netbox/config:z,ro
       - netbox-media-files:/opt/netbox/netbox/media:rw
