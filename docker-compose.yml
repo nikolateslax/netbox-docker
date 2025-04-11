@@ -5,7 +5,7 @@ services:
       - postgres
       - redis
       - redis-cache
-    env_file: env/netbox.envW
+    env_file: env/netbox.env
     user: "unit:root"
     healthcheck:
       test: curl -f http://localhost:8080/login/ || exit 1
